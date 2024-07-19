@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <title>ثبت نام</title>
+</head>
+<body class="bg-slate-800 h-screen flex justify-center items-center font-iransans">
+    <div class="box w-2/3 h-[600px] bg-slate-900 border border-zinc-400 rounded-[10px] flex items-center px-5 justify-between space-x-3 space-x-reverse">
+        <div class="w-full md:w-2/5 flex flex-col h-[550px] space-y-12 ">
+            <div class="flex flex-col ">
+                <div class="light flex space-x-2 space-x-reverse ">
+                    <div class="w-2 h-2 rounded-full bg-yellow-500 animate-upDown"> </div>
+                    <div class="w-2 h-2 rounded-full bg-green-500  animate-upDown1"> </div>
+                    <div class="w-2 h-2 rounded-full bg-red-500 animate-upDown3"> </div>
+                </div>
+            </div> 
+            <div class="flex flex-col space-y-4">
+                <span class="font-bold text-zinc-200">به سایت ما خوش آمدید.</span>
+                <span class="font-extralight text-zinc-400 text-xs">لطفا اطلاعات خواسته شده رو تکمیل کنید.</span>
+            </div>
+            <div class="">
+                <form class="grid grid-cols-2 gap-4 ">
+                    <div class="relative col-span-2 sm:col-span-1">
+                        <input type="form-text" name="first-name" id="first-name" placeholder="نام" class="w-full mb-4 sm:mb-0 peer h-8 border-b-1 border-t-0 border-x-0 border-b-gray-700 focus:border-b-gray-300 bg-slate-900 border focus:outline-none text-amber-400 placeholder-transparent">
+                        <label for="firstname" class="absolute -top-1/2 right-2 text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-amber-400">نام</label>
+                    </div>
+                    <div class="relative col-span-2 sm:col-span-1 overflow-x-clip">
+                        <input type="form-text" name="last-name" id="last-name" placeholder="نام خانوادگی" class="w-full peer h-8 border-b-1 border-t-0 border-x-0 border-b-gray-700 focus:border-b-gray-300 bg-slate-900 border focus:outline-none text-amber-400 placeholder-transparent">
+                        <label for="firstname" class="absolute -top-1/2 right-2 text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-amber-400">نام خانوادگی</label>
+                    </div>
+                    
+                    <div class="relative col-span-2 mt-4">
+                        <input type="form-email" name="email" id="email" placeholder="ایمیل"   class=" w-full h-8 border-b-1 border-t-0 border-x-0 border-b-gray-700 peer focus:border-b-gray-300  bg-slate-900 border focus:outline-none text-amber-400 placeholder-transparent">
+                        <label for="firstname" class="absolute -top-1/2 right-2 text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-amber-400">ایمیل</label>
+                    </div>
+                    <div class=" flex items-end col-span-2 gap-1 w-full ">
+                        <div class="flex w-16 h-10 p-1 items-center space-x-2 space-x-reverse border border-gray-700 border-dashed col-span-1">
+                            <span><img src="./src/assets/images/Flag_of_Iran.svg" class="w-6 h-6 rounded-full" alt=""></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                              </svg>   
+                        </div>
+                        <div class="relative mt-4 flex-1">
+                            <input type="form-tel" name="tel" id="tel" placeholder="09352551376"  class="w-full h-8 border-b-1 border-t-0 border-x-0 border-b-gray-700 peer focus:border-b-gray-300  bg-slate-900 border focus:outline-none text-amber-400 placeholder-transparent">
+                            <label for="firstname" class="absolute -top-1/2 right-2 text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:-top-4 peer-focus:text-sm peer-focus:text-amber-400">موبایل</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-1 sm:space-y-2 justify-center" >
+                        
+                        <button type="button" id="butn" class=" group grou w-72 h-14 bg-slate-700 rounded-lg hover:ring-2 hover:ring-amber-400 group-focus:ring-amber-400  flex items-center justify-around px-1 ">
+                            <div class="icon-user w-[45px] h-[45px] border-2  flex items-center justify-center rounded-md border-gray-400 group-hover:border-amber-400 group-focus:border-amber-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-400 group-hover:text-amber-400 group-focus:text-amber-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                  </svg>    
+                            </div>
+                            <div class=" flex flex-col items-start text-gray-400 group-hover:text-amber-400 group-focus:text-amber-400 space-y-1">
+                                <span class="text-sm">من به صورت انفرادی طراحی میکنم</span>
+                                <span class="text-xs">من یه اکانت تک نفره میخوام</span>
+                            </div>
+                            <input type="checkbox" class="w-[12px] h-[12px] rounded justify-self-end self-start mt-2  outline-none text-amber-400 focus:ring-1 focus:ring-amber-500 checked:bg-amber-400 hover:bg-amber-300 group-[btn-check]:ring-1 group-[btn-check]:ring-amber-600 hidden group-hover:flex " />
+                        </button>
+                        <button type="button" id="butn" class=" group grou w-72 h-14 bg-slate-700 rounded-lg hover:ring-2 hover:ring-amber-400 flex items-center justify-around px-1">
+                            <div class="icon-user w-[45px] h-[45px] border-2  flex items-center justify-center rounded-md border-gray-400 group-hover:border-amber-400 group-focus:border-amber-400 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-400 group-hover:text-amber-400 group-focus:text-amber-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                                  </svg>                                      
+                            </div>
+                            <div class=" flex flex-col items-start text-gray-400 group-hover:text-amber-400 group-focus:text-amber-400 space-y-1">
+                                <span class="text-sm">ما به صورت گروهی طراحی میکنیم</span>
+                                <span class="text-xs">من یه اکانت چند نفره میخوام</span>
+                            </div>
+                            <input type="checkbox" class="w-[12px] h-[12px] rounded justify-self-end self-start mt-2  outline-none text-amber-400 focus:ring-1 focus:ring-amber-500 checked:bg-amber-400 hover:bg-amber-300 group-[btn-check]:ring-1 group-[btn-check]:ring-amber-600 hidden group-hover:flex " />
+                        </button> 
+                    </div>
+                    <button type="button" class="grid col-span-2 w-72 - h-10 bg-amber-500 sm:mt-4 rounded text-center items-center">ثبت نام</button>
+                </form> 
+            </div>
+        </div>
+        <div class="md:w-3/5 h-[550px] md:bg-nature md:bg-cover md:bg-center md:bg-no-repeat rounded-[10px] hidden md:flex"></div>
+    </div>
+</body>
+</html>
